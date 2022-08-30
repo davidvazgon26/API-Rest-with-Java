@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="landon-monitor-03-06-begin (1)" />
+        <module name="landon-monitor-04-06-solution" />
+        <module name="landon-monitor-02-04-begin" />
+        <module name="landon-monitor-03-04-begin" />
+        <module name="landon-monitor-04-04-end" />
+        <module name="landon-monitor-02-04-end" />
+        <module name="landon-monitor-04-03-begin" />
+        <module name="landon-monitor-02-06-challenge" />
+        <module name="landon-monitor-02-05-begin" />
+        <module name="landon-monitor-02-05-end" />
+        <module name="landon-monitor-03-08-challenge" />
+        <module name="landon-monitor-04-04-begin" />
+        <module name="landon-monitor-02-07-solution" />
+        <module name="landon-monitor-03-07-begin" />
+        <module name="landon-monitor-02-03-begin" />
+        <module name="landon-monitor-02-03-end" />
+        <module name="landon-monitor-04-03-end" />
+        <module name="landon-monitor-04-05-challenge" />
+        <module name="landon-monitor-03-03" />
+        <module name="landon-monitor-03-06-begin" />
+        <module name="landon-monitor-03-04-begin (1)" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="landon-monitor-02-03-begin" target="11" />
+      <module name="landon-monitor-02-03-end" target="11" />
+      <module name="landon-monitor-02-04-begin" target="11" />
+      <module name="landon-monitor-02-04-end" target="11" />
+      <module name="landon-monitor-02-05-begin" target="11" />
+      <module name="landon-monitor-02-05-end" target="11" />
+      <module name="landon-monitor-02-06-challenge" target="11" />
+      <module name="landon-monitor-02-07-solution" target="11" />
+      <module name="landon-monitor-03-03" target="11" />
+      <module name="landon-monitor-03-04-begin" target="11" />
+      <module name="landon-monitor-03-04-begin (1)" target="11" />
+      <module name="landon-monitor-03-06-begin" target="11" />
+      <module name="landon-monitor-03-06-begin (1)" target="11" />
+      <module name="landon-monitor-03-07-begin" target="11" />
+      <module name="landon-monitor-03-08-challenge" target="11" />
+      <module name="landon-monitor-04-03-begin" target="11" />
+      <module name="landon-monitor-04-03-end" target="11" />
+      <module name="landon-monitor-04-04-begin" target="11" />
+      <module name="landon-monitor-04-04-end" target="11" />
+      <module name="landon-monitor-04-05-challenge" target="11" />
+      <module name="landon-monitor-04-06-solution" target="11" />
+    </bytecodeTargetLevel>
+  </component>
+  <component name="JavacSettings">
+    <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="landon-monitor-02-03-begin" options="-parameters" />
+      <module name="landon-monitor-02-03-end" options="-parameters" />
+      <module name="landon-monitor-02-04-begin" options="-parameters" />
+      <module name="landon-monitor-02-04-end" options="-parameters" />
+      <module name="landon-monitor-02-05-begin" options="-parameters" />
+      <module name="landon-monitor-02-05-end" options="-parameters" />
+      <module name="landon-monitor-02-06-challenge" options="-parameters" />
+      <module name="landon-monitor-02-07-solution" options="-parameters" />
+      <module name="landon-monitor-03-03" options="-parameters" />
+      <module name="landon-monitor-03-04-begin" options="-parameters" />
+      <module name="landon-monitor-03-04-begin (1)" options="-parameters" />
+      <module name="landon-monitor-03-06-begin" options="-parameters" />
+      <module name="landon-monitor-03-06-begin (1)" options="-parameters" />
+      <module name="landon-monitor-03-07-begin" options="-parameters" />
+      <module name="landon-monitor-03-08-challenge" options="-parameters" />
+      <module name="landon-monitor-04-03-begin" options="-parameters" />
+      <module name="landon-monitor-04-03-end" options="-parameters" />
+      <module name="landon-monitor-04-04-begin" options="-parameters" />
+      <module name="landon-monitor-04-04-end" options="-parameters" />
+      <module name="landon-monitor-04-05-challenge" options="-parameters" />
+      <module name="landon-monitor-04-06-solution" options="-parameters" />
+    </option>
+  </component>
+</project>

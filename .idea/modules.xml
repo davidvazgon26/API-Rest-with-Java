@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/Exercise Files.iml" filepath="$PROJECT_DIR$/.idea/Exercise Files.iml" />
+      <module fileurl="file://$PROJECT_DIR$/consuming_apis_02_03_begin/landon-monitor-02-03-begin.iml" filepath="$PROJECT_DIR$/consuming_apis_02_03_begin/landon-monitor-02-03-begin.iml" />
+      <module fileurl="file://$PROJECT_DIR$/consuming_apis_02_03_end/landon-monitor-02-03-end.iml" filepath="$PROJECT_DIR$/consuming_apis_02_03_end/landon-monitor-02-03-end.iml" />
+      <module fileurl="file://$PROJECT_DIR$/consuming_apis_02_04_begin/landon-monitor-02-04-begin.iml" filepath="$PROJECT_DIR$/consuming_apis_02_04_begin/landon-monitor-02-04-begin.iml" />
+      <module fileurl="file://$PROJECT_DIR$/consuming_apis_02_04_end/landon-monitor-02-04-end.iml" filepath="$PROJECT_DIR$/consuming_apis_02_04_end/landon-monitor-02-04-end.iml" />
+      <module fileurl="file://$PROJECT_DIR$/consuming_apis_02_05_begin/landon-monitor-02-05-begin.iml" filepath="$PROJECT_DIR$/consuming_apis_02_05_begin/landon-monitor-02-05-begin.iml" />
+      <module fileurl="file://$PROJECT_DIR$/consuming_apis_02_05_end/landon-monitor-02-05-end.iml" filepath="$PROJECT_DIR$/consuming_apis_02_05_end/landon-monitor-02-05-end.iml" />
+      <module fileurl="file://$PROJECT_DIR$/consuming_apis_02_06_challenge/landon-monitor-02-06-challenge.iml" filepath="$PROJECT_DIR$/consuming_apis_02_06_challenge/landon-monitor-02-06-challenge.iml" />
+      <module fileurl="file://$PROJECT_DIR$/consuming_apis_02_07_solution/landon-monitor-02-07-solution.iml" filepath="$PROJECT_DIR$/consuming_apis_02_07_solution/landon-monitor-02-07-solution.iml" />
+      <module fileurl="file://$PROJECT_DIR$/consuming_apis_03_03/landon-monitor-03-03.iml" filepath="$PROJECT_DIR$/consuming_apis_03_03/landon-monitor-03-03.iml" />
+      <module fileurl="file://$PROJECT_DIR$/consuming_apis_03_04_end/landon-monitor-03-04-begin.iml" filepath="$PROJECT_DIR$/consuming_apis_03_04_end/landon-monitor-03-04-begin.iml" />
+      <module fileurl="file://$PROJECT_DIR$/consuming_apis_03_04_begin/landon-monitor-03-04-begin (1).iml" filepath="$PROJECT_DIR$/consuming_apis_03_04_begin/landon-monitor-03-04-begin (1).iml" />
+      <module fileurl="file://$PROJECT_DIR$/consuming_apis_03_06_end/landon-monitor-03-06-begin.iml" filepath="$PROJECT_DIR$/consuming_apis_03_06_end/landon-monitor-03-06-begin.iml" />
+      <module fileurl="file://$PROJECT_DIR$/consuming_apis_03_06_begin/landon-monitor-03-06-begin (1).iml" filepath="$PROJECT_DIR$/consuming_apis_03_06_begin/landon-monitor-03-06-begin (1).iml" />
+      <module fileurl="file://$PROJECT_DIR$/consuming_apis_03_07_challenge/landon-monitor-03-07-begin.iml" filepath="$PROJECT_DIR$/consuming_apis_03_07_challenge/landon-monitor-03-07-begin.iml" />
+      <module fileurl="file://$PROJECT_DIR$/consuming_apis_03_08_solution/landon-monitor-03-08-challenge.iml" filepath="$PROJECT_DIR$/consuming_apis_03_08_solution/landon-monitor-03-08-challenge.iml" />
+      <module fileurl="file://$PROJECT_DIR$/consuming_apis_04_03_begin/landon-monitor-04-03-begin.iml" filepath="$PROJECT_DIR$/consuming_apis_04_03_begin/landon-monitor-04-03-begin.iml" />
+      <module fileurl="file://$PROJECT_DIR$/consuming_apis_04_03_end/landon-monitor-04-03-end.iml" filepath="$PROJECT_DIR$/consuming_apis_04_03_end/landon-monitor-04-03-end.iml" />
+      <module fileurl="file://$PROJECT_DIR$/consuming_apis_04_04_begin/landon-monitor-04-04-begin.iml" filepath="$PROJECT_DIR$/consuming_apis_04_04_begin/landon-monitor-04-04-begin.iml" />
+      <module fileurl="file://$PROJECT_DIR$/consuming_apis_04_04_end/landon-monitor-04-04-end.iml" filepath="$PROJECT_DIR$/consuming_apis_04_04_end/landon-monitor-04-04-end.iml" />
+      <module fileurl="file://$PROJECT_DIR$/consuming_apis_04_05_challenge/landon-monitor-04-05-challenge.iml" filepath="$PROJECT_DIR$/consuming_apis_04_05_challenge/landon-monitor-04-05-challenge.iml" />
+      <module fileurl="file://$PROJECT_DIR$/consuming_apis_04_06_solution/landon-monitor-04-06-solution.iml" filepath="$PROJECT_DIR$/consuming_apis_04_06_solution/landon-monitor-04-06-solution.iml" />
+    </modules>
+  </component>
+</project>

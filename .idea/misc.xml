@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="MavenProjectsManager">
+    <option name="originalFiles">
+      <list>
+        <option value="$PROJECT_DIR$/consuming_apis_03_03/pom.xml" />
+        <option value="$PROJECT_DIR$/consuming_apis_02_03_end/pom.xml" />
+        <option value="$PROJECT_DIR$/consuming_apis_02_04_end/pom.xml" />
+        <option value="$PROJECT_DIR$/consuming_apis_02_05_end/pom.xml" />
+        <option value="$PROJECT_DIR$/consuming_apis_03_04_end/pom.xml" />
+        <option value="$PROJECT_DIR$/consuming_apis_03_06_end/pom.xml" />
+        <option value="$PROJECT_DIR$/consuming_apis_04_03_end/pom.xml" />
+        <option value="$PROJECT_DIR$/consuming_apis_04_04_end/pom.xml" />
+        <option value="$PROJECT_DIR$/consuming_apis_02_03_begin/pom.xml" />
+        <option value="$PROJECT_DIR$/consuming_apis_02_04_begin/pom.xml" />
+        <option value="$PROJECT_DIR$/consuming_apis_02_05_begin/pom.xml" />
+        <option value="$PROJECT_DIR$/consuming_apis_03_04_begin/pom.xml" />
+        <option value="$PROJECT_DIR$/consuming_apis_03_06_begin/pom.xml" />
+        <option value="$PROJECT_DIR$/consuming_apis_04_03_begin/pom.xml" />
+        <option value="$PROJECT_DIR$/consuming_apis_04_04_begin/pom.xml" />
+        <option value="$PROJECT_DIR$/consuming_apis_02_07_solution/pom.xml" />
+        <option value="$PROJECT_DIR$/consuming_apis_03_08_solution/pom.xml" />
+        <option value="$PROJECT_DIR$/consuming_apis_04_06_solution/pom.xml" />
+        <option value="$PROJECT_DIR$/consuming_apis_02_06_challenge/pom.xml" />
+        <option value="$PROJECT_DIR$/consuming_apis_03_07_challenge/pom.xml" />
+        <option value="$PROJECT_DIR$/consuming_apis_04_05_challenge/pom.xml" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="11" project-jdk-type="JavaSDK" />
+</project>
