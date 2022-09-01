@@ -17,7 +17,7 @@ import org.springframework.web.util.UriComponentsBuilder;
 @SpringBootTest
 class TwitterSearchTests {
 
-	@Value("${TWITTER_BEARER_TOKEN}")
+	@Value("${TWITTER_BEARER_TOKEN}") //hay que crear esta variable en el path de variables de entorno
 	private String bearerToken;
 	
 	private final static String API_TWITTER_ENDPOINT = "https://api.twitter.com";
@@ -44,9 +44,32 @@ class TwitterSearchTests {
 	}
 
 	@Test
-	void webClientTest() {
+	void webClientTest() throws  InterrupedException{
 
-		
+		//instancia de cliente web
+		WebClient client = WebClient.create(API_TWITTER_ENDPOINT);
+
+		//Configuracion Mono
+		Mono<ResponseEntity<String>> mono = client.get()
+				.uri(API_TWITTER_TWEETS_PATH + "?query={query}", "Linkedin Learning")
+				.header("Authorization", "Bearer", + this.bearerToken)
+				.retrieve()
+				.toEntity(String.class);
+
+		//Se detendra la ejecucion de  nuestro codigo  hasta obtener una respuesta, es decir es una llamada bloqueante
+		//ResponseEntity<String> response = mono.block();
+
+		//Cambiamos a una llamada asyncrona para no bloquear el codigo.
+		mono.subscribe(response -> {
+			System.out.println(response.getBody());
+			assertEquals(200, response.getStatusCodeValue());
+		})
+
+		//System.out.println(response.getBody());
+		//assertEquals(200, response.getStatusCodeValie());
+
+		System.out.println("This should print first because its async");
+		Thread.sleep(5000);
 	}
 	
 	

@@ -1,5 +1,7 @@
 package com.linkedin.api.twitter;
 
+//No se hizo nada en estos ejercicios
+
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
 

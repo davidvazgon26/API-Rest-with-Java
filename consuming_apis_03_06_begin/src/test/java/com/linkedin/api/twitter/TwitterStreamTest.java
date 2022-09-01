@@ -26,6 +26,13 @@ class TwitterStreamTest {
 	@Test
 	void webClientTest() throws InterruptedException, IOException {
 
+		WebClient client = builder
+				.baseURL(API_TWITTER_ENDPOINT)
+				.defaultHeader(headers -> headers.setBearerAuth(bearerToken))
+				.build();
+
+		StreamRuleRequest ruleRequest = new StreamRuleRequest();
+
 	}
 		
 }
