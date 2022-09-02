@@ -3,8 +3,9 @@ package com.linkedin.api.twitter;
 import java.util.ArrayList;
 import java.util.List;
 
-public class StreamRuleRequest {
+public class StreamRuleRequest {  //Este es el objeto que utilizamos en TwitterStreamTest
 
+	//Creamos una lista del tipo StreamRule, que es nuestra Clase con Getters y Setters
 	private List<StreamRule> add = new ArrayList<>();
 
 	public List<StreamRule> getAdd() {

@@ -28,6 +28,9 @@ class TwitterSearchTests {
 	
 	@Test
 	void restTemplateTest() {
+		// restTemplateTest se utiliza para hacer llamados a APIs, por lo que lo puedes encontrar en codigo de spring,
+		// ahora recomiendan utilizar WebClient ya que soporta conexiones sincronaz, asincronas y streaming que realiza
+        //conexiones tipo hilos
 
 		HttpHeaders headers = new HttpHeaders();
 		headers.add("Authorization", "Bearer " + this.bearerToken);

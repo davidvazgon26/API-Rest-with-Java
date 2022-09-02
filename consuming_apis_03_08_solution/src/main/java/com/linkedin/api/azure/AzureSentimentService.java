@@ -27,7 +27,7 @@ public class AzureSentimentService {
 	@Autowired
 	private ObjectMapper mapper;
 	
-	private static final String AZURE_ENDPOINT = "https://landon-hotel-feedback.cognitiveservices.azure.com";
+	private static final String AZURE_ENDPOINT = "https://landon-hotel-feedback-davg.cognitiveservices.azure.com";
 
 	private static final String API_KEY_HEADER_NAME = "Ocp-Apim-Subscription-Key";
 

@@ -22,22 +22,30 @@ import feign.jackson.JacksonEncoder;
 @SpringBootTest
 class AzureSentimentClientTest {
 
-	@Value("${AZURE_API_KEY}")
-	private String azureApiKey;
+    @Value("${AZURE_API_KEY}")
+    private String azureApiKey;
 
-	private static final String AZURE_ENDPOINT = "https://landon-hotel-feedback.cognitiveservices.azure.com";
+    private static final String AZURE_ENDPOINT = "https://landon-hotel-feedback-davg.cognitiveservices.azure.com";
 
-	@Test
-	void testFeignPositiveSentiment() throws IOException, InterruptedException {
-		
-		TextDocument document = new TextDocument("1","I love the Landon Hotel!", "en");
-		TextAnalyticsRequest requestBody = new TextAnalyticsRequest();
-		requestBody.getDocuments().add(document);
-		
-		SentimentAnalysisResponse analysis = null;
-		
-		assertNotNull(analysis);
-		assertEquals("positive", analysis.getDocuments().get(0).getSentiment());
-	}
+    @Test
+    void testFeignPositiveSentiment() throws IOException, InterruptedException {
+
+        TextDocument document = new TextDocument("1","I love the Landon Hotel!", "en");
+        TextAnalyticsRequest requestBody = new TextAnalyticsRequest();
+        requestBody.getDocuments().add(document);
+
+        SentimentAnalysisResponse analysis = null;
+
+        AzureSentimentClient client = Feign.builder()
+                .decoder(new JacksonDecoder())
+                .encoder(new JacksonEncoder())
+                .target(AzureSentimentClient.class, AZURE_ENDPOINT);
+
+        analysis = client.analyze(azureApiKey, requestBody);
+
+
+        assertNotNull(analysis);
+        assertEquals("positive", analysis.getDocuments().get(0).getSentiment());
+    }
 
 }

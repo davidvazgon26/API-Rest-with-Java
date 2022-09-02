@@ -2,6 +2,10 @@ package com.linkedin.api;
 
 import java.io.IOException;
 
+import com.linkedin.api.twilio.TwilioClient;
+import feign.Feign;
+import feign.auth.BasicAuthRequestInterceptor;
+import feign.form.FormEncoder;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.boot.CommandLineRunner;
@@ -30,7 +34,7 @@ public class LandonMonitorApplication implements CommandLineRunner {
 	@Value("${TO_NUMBER}")
 	private String toNumber;
 	
-	private static final String fromNumber = "+18172032143";
+	private static final String fromNumber = "+12182316543";
 
 	private final static String TWILIO_API_DOMAIN = "https://api.twilio.com";
 	
@@ -45,6 +49,18 @@ public class LandonMonitorApplication implements CommandLineRunner {
 		ObjectMapper mapper = new ObjectMapper();
 		mapper.configure(DeserializationFeature.FAIL_ON_UNKNOWN_PROPERTIES, false);
 		return mapper;
+	}
+
+	@Bean
+	public TwilioClient twilioClient() {
+
+		BasicAuthRequestInterceptor interceptor = new BasicAuthRequestInterceptor(twilioSid, twilioAuthToken);
+
+		return Feign.builder()
+				.requestInterceptor(interceptor)
+				.encoder(new FormEncoder())
+				.target(TwilioClient.class, TWILIO_API_DOMAIN);
+
 	}
 		
 	public static void main(String[] args) {
@@ -77,7 +93,11 @@ public class LandonMonitorApplication implements CommandLineRunner {
 				System.out.println(message);
 				
 				//5.  Use the TwilioClient to send the message regarding the feedback received.
-				
+				this.twilioClient().sendTextMessage(
+						twilioSid,
+						toNumber,
+						fromNumber,
+						message);
 				
 			} catch (IOException | InterruptedException e) {
 				e.printStackTrace();

@@ -12,7 +12,9 @@ import org.springframework.http.HttpHeaders;
 import org.springframework.http.HttpMethod;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.client.RestTemplate;
+import org.springframework.web.reactive.function.client.WebClient;
 import org.springframework.web.util.UriComponentsBuilder;
+import reactor.core.publisher.Mono;
 
 @SpringBootTest
 class TwitterSearchTests {
@@ -44,26 +46,28 @@ class TwitterSearchTests {
 	}
 
 	@Test
-	void webClientTest() throws  InterrupedException{
+	void webClientTest() throws  InterruptedException{
 
 		//instancia de cliente web
 		WebClient client = WebClient.create(API_TWITTER_ENDPOINT);
 
-		//Configuracion Mono
+		//Configuracion Mono (objeto reactivo, significa que no se bloque por completo)
+		//Lleva un parametro de tipo generico
 		Mono<ResponseEntity<String>> mono = client.get()
 				.uri(API_TWITTER_TWEETS_PATH + "?query={query}", "Linkedin Learning")
-				.header("Authorization", "Bearer", + this.bearerToken)
+				.header("Authorization", "Bearer " + this.bearerToken) //El espacio en Bearer es importante
 				.retrieve()
 				.toEntity(String.class);
 
 		//Se detendra la ejecucion de  nuestro codigo  hasta obtener una respuesta, es decir es una llamada bloqueante
+		// por lo que usaremmos el otro metodo dejando solo como informativa esta instruccion.
 		//ResponseEntity<String> response = mono.block();
 
 		//Cambiamos a una llamada asyncrona para no bloquear el codigo.
 		mono.subscribe(response -> {
 			System.out.println(response.getBody());
 			assertEquals(200, response.getStatusCodeValue());
-		})
+		});
 
 		//System.out.println(response.getBody());
 		//assertEquals(200, response.getStatusCodeValie());

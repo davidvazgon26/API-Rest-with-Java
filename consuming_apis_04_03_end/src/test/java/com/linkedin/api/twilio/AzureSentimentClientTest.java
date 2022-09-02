@@ -25,7 +25,7 @@ class AzureSentimentClientTest {
 	@Value("${AZURE_API_KEY}")
 	private String azureApiKey;
 
-	private static final String AZURE_ENDPOINT = "https://landon-hotel-feedback.cognitiveservices.azure.com";
+	private static final String AZURE_ENDPOINT = "https://landon-hotel-feedback-davg.cognitiveservices.azure.com";
 
 	@Test
 	void testFeignPositiveSentiment() throws IOException, InterruptedException {

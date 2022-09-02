@@ -36,7 +36,7 @@ public class LandonMonitorApplication implements CommandLineRunner {
 	@Value("${TO_NUMBER}")
 	private String toNumber;
 	
-	private static final String fromNumber = "+18172032143";
+	private static final String fromNumber = "+12182316543";
 	
 	private final static String TWILIO_API_DOMAIN = "https://api.twilio.com";
 

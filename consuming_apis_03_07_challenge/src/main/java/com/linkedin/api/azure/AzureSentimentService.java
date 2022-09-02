@@ -23,11 +23,11 @@ public class AzureSentimentService {
 
 	@Value("${AZURE_API_KEY}")
 	private String azureApiKey;
-		
+
 	@Autowired
 	private ObjectMapper mapper;
-	
-	private static final String AZURE_ENDPOINT = "https://landon-hotel-feedback.cognitiveservices.azure.com";
+
+	private static final String AZURE_ENDPOINT = "https://landon-hotel-feedback-davg.cognitiveservices.azure.com";
 
 	private static final String API_KEY_HEADER_NAME = "Ocp-Apim-Subscription-Key";
 
@@ -40,7 +40,7 @@ public class AzureSentimentService {
 		TextDocument document = new TextDocument("1",text,language);
 		TextAnalyticsRequest requestBody = new TextAnalyticsRequest();
 		requestBody.getDocuments().add(document);
-		
+
 		String endpoint = AZURE_ENDPOINT + "/text/analytics/v3.0/sentiment";
 
 		HttpClient client = HttpClient.newBuilder()
@@ -48,7 +48,7 @@ public class AzureSentimentService {
 				.proxy(ProxySelector.getDefault())
 				.connectTimeout(Duration.ofSeconds(5))
 				.build();
-		
+
 		HttpRequest request = HttpRequest.newBuilder()
 				.uri(URI.create(endpoint))
 				.header(API_KEY_HEADER_NAME, this.azureApiKey)
@@ -56,14 +56,14 @@ public class AzureSentimentService {
 				.POST(BodyPublishers.ofString(mapper.writeValueAsString(requestBody)))
 				.timeout(Duration.ofSeconds(5))
 				.build();
-		
+
 		HttpResponse<String> response = client.send(request, BodyHandlers.ofString());
-		
+
 		if(response.statusCode() != 200) {
 			System.out.println(response.body());
 			throw new RuntimeException("An issue occurred making the API call");
 		}
-	
+
 		String sentimentValue = this.mapper
 				.readValue(response.body(), JsonNode.class)
 				.get("documents")
@@ -72,7 +72,7 @@ public class AzureSentimentService {
 				.asText();
 
 		SentimentAnalysis analysis = new SentimentAnalysis(document, sentimentValue);
-		
+
 		return analysis;
 
 	}
